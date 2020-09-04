@@ -9,6 +9,19 @@
       Title="PageAdmin">
 
     <Grid Background="#FFF9DDDD">
-        
+
+        <Label Content="Bienvenid@!!" HorizontalAlignment="Left" Margin="99,10,0,0" VerticalAlignment="Top" FontSize="24" FontWeight="Bold" FontStyle="Italic" Grid.Column="1"/>
+        <DataGrid Margin="25,119,25,69" Width="750"  >
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Nombre"   Width="125" />
+                <DataGridTextColumn Header="Cedula"   Width="125"/>
+                <DataGridTextColumn Header="Hora"   Width="125"/>
+                <DataGridTextColumn Header="Tipo de pan" Width="125"/>
+                <DataGridTextColumn Header="Cantidad"   Width="125"/>
+                <DataGridTextColumn Header="Valor venta"   Width="125"/>
+            </DataGrid.Columns>
+        </DataGrid>
+        <Label Content="Información de las ventas de hoy:" HorizontalAlignment="Left" Margin="25,62,0,0" VerticalAlignment="Top" FontSize="16" Grid.ColumnSpan="2"/>
+        <Button Name="btnAdminLogOut" Content="LogOut" HorizontalAlignment="Center" Margin="0,386,0,0" VerticalAlignment="Top" Width="50" Click="btnAdminLogOut_Click"/>
     </Grid>
 </Page>

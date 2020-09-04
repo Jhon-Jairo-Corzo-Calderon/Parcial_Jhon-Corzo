@@ -21,6 +21,17 @@ namespace Parcial_JhonCorzo
         public PageEmpleado()
         {
             InitializeComponent();
+
+            comboBoxBread.Items.Add("Aliñeado");
+            comboBoxBread.Items.Add("No aliñeado");
+            comboBoxBread.Items.Add("Especial");
+
+        }
+
+        private void btnLogOut_Click(object sender, RoutedEventArgs e)
+        {
+            MainWindow w = (MainWindow)Window.GetWindow(this);
+            w.mainFrame.NavigationService.Navigate(new PageLogIn());
         }
     }
 }

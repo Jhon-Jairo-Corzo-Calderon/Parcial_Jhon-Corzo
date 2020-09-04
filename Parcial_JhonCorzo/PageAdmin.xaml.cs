@@ -22,5 +22,12 @@ namespace Parcial_JhonCorzo
         {
             InitializeComponent();
         }
+
+        private void btnAdminLogOut_Click(object sender, RoutedEventArgs e)
+        {
+            MainWindow w = (MainWindow)Window.GetWindow(this);
+            w.mainFrame.NavigationService.Navigate(new PageLogIn());
+ 
+        }
     }
 }

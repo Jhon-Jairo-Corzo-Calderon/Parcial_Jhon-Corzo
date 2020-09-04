@@ -33,13 +33,7 @@ namespace Parcial_JhonCorzo
                 MainWindow w = (MainWindow)Window.GetWindow(this);
                 w.mainFrame.NavigationService.Navigate(new PageAdmin());
             }
-            else
-            {
-                MessageBox.Show("Invalid Credentials");
-            }
-
-
-            if (((usuario == "empleado1") || (usuario == "empleado2")) && txtPassword.Password == "1234")
+            else if ((usuario == "empleado")  && txtPassword.Password == "1234")
             {
                 MainWindow w = (MainWindow)Window.GetWindow(this);
                 w.mainFrame.NavigationService.Navigate(new PageEmpleado());
@@ -48,6 +42,12 @@ namespace Parcial_JhonCorzo
             {
                 MessageBox.Show("Invalid Credentials");
             }
+        }
+
+        private void Grid_Loaded(object sender, RoutedEventArgs e)
+        {
+            txtPassword.Password = "";
+            txtUsername.Text = "";
         }
     }
 }

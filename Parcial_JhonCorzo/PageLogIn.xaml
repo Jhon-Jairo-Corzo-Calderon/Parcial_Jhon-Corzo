@@ -11,10 +11,10 @@
     <Grid Background="#FFD8FDE0">
 
         <Label Content="Only Pans" HorizontalAlignment="Center" Margin="0,23,0,0" VerticalAlignment="Top" Height="68" Width="188" FontSize="40" FontFamily="Dubai Medium" Foreground="#FF7E593A"/>
-        <Grid Margin="283,111,283,36" Background="White">
+        <Grid Margin="283,111,283,36" Background="White" Loaded="Grid_Loaded">
             <TextBox Name="txtUsername" HorizontalAlignment="Center" Margin="0,86,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="166" Background="#FFF0F0F0" Height="21"/>
-            <Label Content="Usuario:" HorizontalAlignment="Left" Margin="28,55,0,0" VerticalAlignment="Top"/>
-            <Label Content="Contraseña:" HorizontalAlignment="Left" Margin="28,146,0,0" VerticalAlignment="Top"/>
+            <Label Content="Usuario:" HorizontalAlignment="Left" Margin="19,55,0,0" VerticalAlignment="Top"/>
+            <Label Content="Contraseña:" HorizontalAlignment="Left" Margin="19,146,0,0" VerticalAlignment="Top"/>
             <PasswordBox Name="txtPassword" HorizontalAlignment="Center" Margin="0,177,0,0" VerticalAlignment="Top" Width="167" Height="21" Background="#FFF0F0F0"/>
             <Button Content="LogIn" HorizontalAlignment="Center" Margin="0,244,0,0" VerticalAlignment="Top" Width="46" Height="22" Click="Button_Click"/>
 

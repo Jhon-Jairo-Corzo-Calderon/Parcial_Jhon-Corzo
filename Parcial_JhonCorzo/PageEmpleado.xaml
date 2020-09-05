@@ -15,21 +15,22 @@
         <ComboBox Name="comboBoxBread" HorizontalAlignment="Left" Margin="59,247,0,0" VerticalAlignment="Top" Width="201"/>
         <TextBox Name="clienteCant" HorizontalAlignment="Left" Margin="209,303,0,0"  TextWrapping="Wrap" VerticalAlignment="Top" Width="51" Height="22"/>
 
-        <DataGrid Name="dataPan" Margin="300,65,28,94" >
+        <DataGrid Name="dataPan" Margin="300,65,28,94" IsManipulationEnabled="True"  >
             <DataGrid.Columns>
-                <DataGridTextColumn Header="Nombre"   Width="90" FontSize="10"/>
-                <DataGridTextColumn Header="Cedula"   Width="90"/>
-                <DataGridTextColumn Header="Hora"   Width="90"/>
-                <DataGridTextColumn Header="Tipo de pan" Width="90"/>
-                <DataGridTextColumn Header="Cantidad"   Width="90"/>
+                <DataGridTextColumn Header="Nombre"   Width="90"  FontSize="10" Binding="{Binding ClientName}"/>
+                <DataGridTextColumn Header="Cedula"   Width="90" Binding="{Binding ClientCC}"/>
+                <DataGridTextColumn Header="Hora"   Width="90" Binding="{Binding Time}"/>
+                <DataGridTextColumn Header="Tipo de pan" Width="90" Binding="{Binding BreadKind}"/>
+                <DataGridTextColumn Header="Cantidad"   Width="90" Binding="{Binding BreadAmount}"/>
+                <DataGridTextColumn Header="Valor venta"   Width="125" Binding="{Binding Money}"/>
             </DataGrid.Columns>
         </DataGrid>
 
         <Label Content="Nombre del cliente:" HorizontalAlignment="Left" Margin="59,65,0,0" VerticalAlignment="Top"/>
         <Label Content="Cedula del cliente:" HorizontalAlignment="Left" Margin="59,139,0,0" VerticalAlignment="Top"/>
-        <TextBox Name="clientName" HorizontalAlignment="Left" Margin="59,104,0,0"  TextWrapping="Wrap" VerticalAlignment="Top" Width="201" Height="22"/>
-        <TextBox Name="clientCC" HorizontalAlignment="Left" Margin="59,173,0,0"  TextWrapping="Wrap" VerticalAlignment="Top" Width="201" Height="22"/>
-        <Button Name="btnVender" Content="Vender" HorizontalAlignment="Left" Margin="97,363,0,0" VerticalAlignment="Top" Width="51"/>
+        <TextBox Name="clientName" HorizontalAlignment="Left" Margin="59,104,0,0"  TextWrapping="Wrap" VerticalAlignment="Top" Width="201" Height="22" />
+        <TextBox Name="clientCC" HorizontalAlignment="Left" Margin="59,173,0,0"  TextWrapping="Wrap" VerticalAlignment="Top" Width="201" Height="22" />
+        <Button Name="btnVender" Content="Vender" HorizontalAlignment="Left" Margin="97,363,0,0" VerticalAlignment="Top" Width="51" Click="btnVender_Click"/>
         <Button Name="btnLogOut" Content="LogOut" HorizontalAlignment="Left" Margin="160,363,0,0" VerticalAlignment="Top" Width="50" Click="btnLogOut_Click"/>
         
 

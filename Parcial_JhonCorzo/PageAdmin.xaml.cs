@@ -21,13 +21,21 @@ namespace Parcial_JhonCorzo
         public PageAdmin()
         {
             InitializeComponent();
+            
         }
 
         private void btnAdminLogOut_Click(object sender, RoutedEventArgs e)
         {
             MainWindow w = (MainWindow)Window.GetWindow(this);
             w.mainFrame.NavigationService.Navigate(new PageLogIn());
- 
+        }
+
+        private void DataGrid_Loaded(object sender, RoutedEventArgs e)
+        {
+            foreach (DataGrid row in data)
+            {
+
+            }
         }
     }
 }
